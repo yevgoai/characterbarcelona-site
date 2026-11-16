@@ -1,0 +1,27 @@
+/* The four approved portraits retain their original crop and proportions. */
+.team-section.team-portraits{display:block;padding-top:60px;padding-bottom:60px}
+.team-portraits .team-intro{display:grid;grid-template-columns:1fr auto;column-gap:40px;align-items:end;margin-bottom:30px}
+.team-portraits .team-intro .eyebrow{grid-column:1/-1}
+.team-portraits .team-intro h2{margin-top:16px;margin-bottom:0}
+.team-portraits .team-intro>p{margin:0 0 3px;max-width:270px}
+.team-portraits .team-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px}
+.team-portraits .team-member,.team-portraits .team-member:nth-child(2){display:block;min-width:0;padding:0;border:0}
+.staff-portrait{overflow:hidden;background:#342923;aspect-ratio:3/4}
+.staff-portrait img{display:block;width:100%;height:100%;object-fit:cover;aspect-ratio:3/4}
+.staff-details{padding-top:17px}
+.staff-details h3{margin:0;font:400 clamp(23px,2.1vw,29px)/1.2 var(--serif)}
+.staff-instagram{display:flex;align-items:center;gap:8px;min-height:40px;width:100%;font-size:11px;color:#ded0c3;text-decoration:none}
+.staff-instagram .app-icon{width:17px;height:17px;flex-shrink:0}
+.staff-link-arrow{margin-left:auto;font-size:15px}
+.staff-instagram:hover{color:#fff}
+.team-portraits .member-languages{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px;min-height:42px;margin:0 0 9px}
+.team-portraits .language-label{font-size:10px;color:#d5c5b7}
+.team-portraits .language-flags{gap:7px}
+.team-portraits .language-flag>svg{width:20px;height:14px}
+.staff-book{display:flex;align-items:center;gap:9px;min-height:44px;width:100%;padding:10px 0;border:0;border-top:1px solid #f4eee538;background:transparent;color:inherit;font:inherit;font-size:12px;text-align:left;cursor:pointer}
+.staff-book .app-icon{width:19px;height:19px}
+.staff-book>span:last-child{margin-left:auto;font-size:16px}
+.staff-book:hover{border-top-color:#f4eee5;color:#fff}
+@media(min-width:1024px){.team-portraits .member-languages{align-content:start;min-height:52px}.team-portraits .language-label{flex-basis:100%}}
+@media(max-width:1023px){.team-portraits .team-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 24px}.team-portraits .team-intro{grid-template-columns:1fr}.team-portraits .team-intro>p{margin-top:14px;max-width:none}}
+@media(max-width:760px){.team-section.team-portraits{padding-top:42px;padding-bottom:42px}.team-portraits .team-intro{margin-bottom:26px}.team-portraits .team-grid{gap:26px 16px}.staff-details{padding-top:14px}.staff-details h3{font-size:clamp(20px,5.8vw,26px)}.staff-instagram{gap:6px;font-size:10px;min-height:40px}.staff-instagram .app-icon{width:15px;height:15px}.staff-link-arrow{display:none}.team-portraits .member-languages{display:block;min-height:51px;margin-bottom:7px}.team-portraits .language-label{display:block;margin:0 0 3px}.team-portraits .language-flags{gap:6px}.staff-book{font-size:11px;gap:6px}.staff-book .app-icon{width:17px;height:17px}}

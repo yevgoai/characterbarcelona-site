@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://characterbarcelona.com/sitemap.xml

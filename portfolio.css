@@ -1,0 +1,75 @@
+/* Compact native portfolio. Image proportions match the approved originals. */
+.gallery-section{height:auto;background:#30231f}
+.gallery-section .gallery-pin{position:static;height:auto;padding:42px 0 26px;overflow:hidden}
+.gallery-section .gallery-heading{padding-bottom:24px}
+.gallery-section .gallery-window{overflow-x:auto;scroll-snap-type:x proximity;overscroll-behavior-x:contain;scrollbar-width:none;scroll-padding-inline:7vw}
+.gallery-window::-webkit-scrollbar{display:none}
+.gallery-section .gallery-track{gap:20px;transform:none;padding:0 7vw;will-change:auto}
+.gallery-section .gallery-card,.gallery-section .gallery-card:nth-child(2),.gallery-section .gallery-card:nth-child(4){width:clamp(230px,22vw,285px);max-width:none;padding:0;scroll-snap-align:start}
+.gallery-section .gallery-card img,.gallery-section .gallery-card:nth-child(2) img,.gallery-section .gallery-card:nth-child(4) img{height:auto!important;max-height:none;aspect-ratio:3/4;object-fit:contain;object-position:center;transform:none;transition:none}
+.gallery-section .gallery-bottom{padding-top:20px;flex-wrap:nowrap;gap:22px}
+.gallery-section .gallery-meter{margin-left:auto;max-width:120px;flex:1}
+.portfolio-navigation{display:flex;align-items:center;gap:14px;flex-shrink:0}
+.portfolio-navigation button,.portfolio-dialog-controls button,.portfolio-close{width:44px;height:44px;border:1px solid #cfbfb244;background:transparent;color:#f4eee5;font:400 21px/1 Arial,sans-serif;border-radius:50%}
+.portfolio-navigation button:disabled{opacity:.25;cursor:default}
+
+dialog.portfolio-dialog{padding:0 16px 14px;max-width:820px;width:calc(100% - 24px);max-height:calc(100svh - 24px);overflow:auto;background:#221c19;color:#f4eee5;border:0;box-shadow:none}
+.portfolio-dialog::backdrop{background:#17120fed;backdrop-filter:none}
+.portfolio-dialog-toolbar{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;font-size:10px;letter-spacing:.18em;padding:0 2px}
+.portfolio-dialog-toolbar form{margin:0}
+.portfolio-dialog .portfolio-close{border:0;font-size:29px}
+.portfolio-dialog .portfolio-full{height:calc(100svh - 178px);max-height:920px;width:100%;object-fit:contain;touch-action:pan-y pinch-zoom}
+.portfolio-dialog-controls{display:flex;justify-content:center;gap:18px;padding-top:12px}
+@media(max-width:760px){
+ .gallery-section .gallery-pin{padding:34px 0 24px!important}
+ .gallery-section .gallery-track{gap:14px;padding:0 24px}
+ .gallery-section .gallery-window{scroll-padding-inline:24px;scroll-snap-type:x mandatory}
+ .gallery-section .gallery-card,.gallery-section .gallery-card:nth-child(2),.gallery-section .gallery-card:nth-child(4){width:72vw;max-width:285px}
+ .gallery-section .gallery-heading{padding-bottom:20px}
+ .gallery-section .gallery-bottom{gap:10px;padding-top:16px}
+ .gallery-section .gallery-meter{display:none}
+ .gallery-section .gallery-hint{font-size:10px;letter-spacing:0}
+ .portfolio-navigation{margin-left:auto;gap:8px}
+
+ dialog.portfolio-dialog{width:calc(100% - 16px);padding:0 8px 10px;max-height:calc(100svh - 16px)}
+ .portfolio-dialog .portfolio-full{height:calc(100svh - 166px)}
+}
+
+/* Approved photograph #5 is the opening portrait on every screen. */
+.hero-photo img{object-position:50% 44%}
+@media(max-width:760px){.hero-photo img{object-position:50% 44%}}
+
+/* A compact opening composition with a smaller portrait and natural text height. */
+.hero{height:auto;min-height:0;max-height:none;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr)}
+.hero-copy{min-height:clamp(500px,64svh,600px);padding:38px 6vw;justify-content:center}
+.hero h1{font-size:clamp(40px,4.1vw,60px);margin:24px 0 20px}
+.hero-description{line-height:1.8;max-width:330px}
+.hero-actions{margin-top:26px}
+.hero .explore{margin-top:27px;padding-top:0}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-position:50% 48%}
+.hero-watermark{font-size:360px;bottom:-85px}
+@media(min-width:761px) and (max-width:1100px){
+ .hero{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .hero-copy{padding:32px 5vw}
+ .hero h1{font-size:clamp(36px,4.3vw,46px)}
+}
+@media(max-width:760px){
+ .hero{display:flex;min-height:0}
+ .hero-copy{min-height:0;padding:28px 24px 24px}
+ .hero h1{font-size:clamp(33px,9vw,42px);line-height:1.12;margin:18px 0 16px}
+ .hero-description{font-size:13px;line-height:1.7}
+ .hero-actions{margin-top:22px;gap:20px}
+ .hero .button{min-height:46px;padding:14px 18px}
+ .hero .explore{margin-top:18px;padding-top:0}
+ .hero-photo{height:clamp(280px,82vw,360px);max-height:none}
+ .hero-photo img{object-position:50% 49%}
+}
+
+/* The brand motto stays readable without enlarging the compact opening section. */
+.hero .hero-motto{font-size:clamp(31px,3.15vw,46px);line-height:1.18;letter-spacing:-.035em}
+.hero .hero-motto em{margin-top:8px}
+@media(min-width:761px) and (max-width:1100px){.hero .hero-motto{font-size:clamp(29px,3.1vw,35px)}}
+@media(max-width:760px){
+ .hero .hero-motto{font-size:clamp(25px,7.2vw,34px);line-height:1.2;margin:18px 0 16px}
+ .hero .hero-motto em{margin-top:7px}
+}

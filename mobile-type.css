@@ -1,0 +1,42 @@
+/* Phone readability: larger secondary text without changing the desktop layout. */
+@media (max-width:760px){
+  /* Main copy */
+  :root .hero-description,:root .section-intro p,:root .team-intro p,:root .care-copy p,
+  :root .service-content p,:root .faq-item p,:root .reviews-intro{font-size:15px;line-height:1.55}
+  :root .care-product p{font-size:13.5px;line-height:1.45}
+  :root .more-services summary span{font-size:15px}
+
+  /* Navigation and language switcher */
+  :root .navigation a{font-size:13px}
+  :root .header .languages [data-lang],:root .languages [data-lang]{font-size:12px}
+  :root .staff-instagram{font-size:13px}
+  :root .brand span{font-size:8.5px}
+
+  /* Buttons and links */
+  :root .button,:root .button span{font-size:14px}
+  :root .service-button,:root .service-button span{font-size:13px}
+  :root .mobile-dock .dock-link,:root .mobile-dock .dock-link span,:root .mobile-dock .button span{font-size:13px}
+  :root .text-link,:root .text-link span{font-size:14px}
+  :root .staff-book,:root .staff-book span{font-size:15px}
+
+  /* Labels and meta */
+  :root .eyebrow{font-size:11.5px}
+  :root .section-note{font-size:12.5px}
+  :root .service-meta span{font-size:13px}
+  :root .language-label,:root .flag-tooltip{font-size:12px}
+  :root .gallery-hint,:root .review-toolbar span,:root .reviews-bottom span,:root .explore span{font-size:12px}
+  :root .contact-details h3{font-size:12px}
+
+  /* Reviews */
+  :root .review-author{font-size:14px}
+  :root .review-source,:root .review-stars,:root .rating-number span{font-size:12.5px}
+  :root .review-excerpt,:root .review-original{font-size:12px}
+  :root .google-rating>span[data-t]{font-size:13px}
+  :root .google-rating small{font-size:11px}
+
+  /* Footer */
+  :root .care-foot{font-size:11px}
+  :root .motion-toggle,:root .footer-bottom a{font-size:12px}
+  :root .footer-bottom span{font-size:10px}
+  :root .footer-bottom a[href="#top"],:root .footer-bottom a:last-child{display:inline-block;padding:10px 0}
+}
