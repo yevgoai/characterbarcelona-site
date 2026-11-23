@@ -155,7 +155,7 @@ const translations = {
     "galleryNext": "Следующая фотография",
     "galleryOpen": "Увеличить фотографию",
     "galleryTitle": "Работы Character",
-    "heroThree": "Характер остается неизменным.",
+    "heroThree": "Character остаётся неизменным.",
     "nikita": "Ник"
   },
   "en": {
@@ -623,7 +623,7 @@ const translations = {
     "galleryNext": "Наступна фотографія",
     "galleryOpen": "Збільшити фотографію",
     "galleryTitle": "Роботи Character",
-    "heroThree": "Характер залишається незмінним.",
+    "heroThree": "Character залишається незмінним.",
     "nikita": "Нік"
   }
 };
